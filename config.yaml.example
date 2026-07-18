@@ -1,0 +1,26 @@
+devices:
+  - name: switch-1
+    port: /dev/ttyUSB0
+    baud: 9600
+    driver: cisco_ios
+    mgmt_vlan: 1
+    mgmt_ip: 10.0.0.2
+    subnet_mask: 255.255.255.0
+    default_gateway: 10.0.0.1
+    credentials:
+      username: test
+      password: test
+      enable_password: test
+
+  - name: switch-2
+    port: /dev/ttyUSB1
+    baud: 9600
+    driver: hp_procurve
+    mgmt_vlan: 1
+    mgmt_ip: 10.0.0.3
+    subnet_mask: 255.255.255.0
+    default_gateway: 10.0.0.1
+    credentials:
+      username: test
+      password: test
+      enable_password: test
