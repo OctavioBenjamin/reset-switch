@@ -1,10 +1,10 @@
 from controlador.base import ControladorSwitch
 from controlador.cisco import ControladorCisco
-from controlador.hp import ControladorHP
+from controlador.hp_1910 import ControladorHP1910
 
 MAPEO_DRIVERS = {
     "cisco_ios": ControladorCisco,
-    "hp_procurve": ControladorHP,
+    "hp_1910": ControladorHP1910,
 }
 
-__all__ = ["ControladorSwitch", "ControladorCisco", "ControladorHP", "MAPEO_DRIVERS"]
+__all__ = ["ControladorSwitch", "ControladorCisco", "ControladorHP1910", "MAPEO_DRIVERS"]

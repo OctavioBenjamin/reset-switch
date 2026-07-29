@@ -9,3 +9,4 @@ dist/
 build/
 IA_CONTEXT.md
 config.yaml
+context/

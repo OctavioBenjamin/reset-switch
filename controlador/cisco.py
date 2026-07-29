@@ -6,13 +6,9 @@ from controlador.base import ControladorSwitch
 
 
 class ControladorCisco(ControladorSwitch):
+    # La interfaz define: Puerto, baud, usuario, password y password enable. 
     """Controlador para switches Cisco IOS."""
 
-    PROMPT_USUARIO = "Username:"
-    PROMPT_CONTRASENA = "Password:"
-    PROMPT_ENABLE = "enable"
-    PROMPT_MODO_CONFIG = "(config"
-    PROMPT_FINAL = "#"
     ESPERA = 1.0
 
     def conectar(self):

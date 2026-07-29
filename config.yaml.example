@@ -15,7 +15,7 @@ devices:
   - name: switch-2
     port: /dev/ttyUSB1
     baud: 9600
-    driver: hp_procurve
+    driver: hp_1910
     mgmt_vlan: 1
     mgmt_ip: 10.0.0.3
     subnet_mask: 255.255.255.0
